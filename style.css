@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+.attribution {
+    font-size: 0.6em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    background-color: hsl(228, 11%, 9%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+#card {
+    background-color: hsl(215, 23%, 14%);
+    min-height: 27em;
+    width: 25em;
+    margin: auto;
+    border-radius: 1.4em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes bounce {
+    from, to { transform: scale(1, 1) translate(-50%, -50%); }
+    25% { transform: scale(0.9, 1.1) translate(-55%, -55%); }
+    50% { transform: scale(1.1, 0.9) translate(-47.5%, -47.5%); }
+    75% { transform: scale(0.95, 1.05) translate(-52.5%, -52.5%); }
+}
+#rating {
+    display: block;
+}
+#thanks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.bubble {
+    background-color: hsl(210, 19%, 18%);
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 100%;
+    position: relative;
+}
+.star {
+    position: relative;
+    width: 1.4em;
+    height: auto;
+    left: 1.1em;
+    top: 1.05em;
+    margin: auto;
+}
+.headline {
+    font-weight: 700;
+    font-size: 2em;
+    position: relative;
+}
+.text {
+    color: hsl(217, 12%, 63%);
+    position: relative;
+    top: -0.7em;
+    margin: auto;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.ball-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 1.1em;
+    justify-content: space-between;
+}
+.ball {
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    height: 2.8em;
+    width: 2.8em;
+    text-align: center;
+    border-radius: 100%;
+    border: none;
+}
+.ball-text {
+    font-size: 0.93em;
+    position: relative;
+    top: -0.1em;
+}
+.ball:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+.ball:active {
+    border-style: none;
+}
+.submit {
+    position: relative;
+    width: 100%;
+    top: 2.6em;
+    height: 4em;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 5em;
+    margin-bottom: 2.4em;
+}
+.submit-text {
+    text-align: center;
+    position: relative;
+    top: 1.05em;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.thanks-img {
+    width: 13em;
+    height: auto;
+    margin: 1em 0 2em;
+}
+.thanks-back {
+    background-color: hsl(215, 19%, 17%);
+    border-radius: 5em;
+    text-align: center;
+    width: 15em;
+    height: 3em;
+}
+.thanks-selected {
+    color: hsl(25, 97%, 53%);
+    margin: auto;
+    position: relative;
+    top: 0.7em;
+    font-size: 1.22em;
+}
+.thanks-headline {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin: 1em 0 0.5em;
+}
+.thanks-text {
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    font-size: 1.2em;
+    margin: auto;
+}
+@media only screen and (min-width: 550px) {
+    body {
+        font-size: 15px;
+    }
+    .ball {
+        height: 4.2em;
+        width: 4.2em;
+    }
+    .ball-text {
+        font-size: 1.4em;
+    }
+}
