@@ -105,13 +105,14 @@ body {
     background-color: hsl(25, 97%, 53%);
     border-radius: 5em;
     margin-bottom: 2.4em;
+    font-weight: 700;
 }
 .submit-text {
     text-align: center;
     position: relative;
     top: 1.05em;
     font-size: 1.2em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.25em;
 }
 .submit:hover {
     background-color: hsl(0, 0%, 100%);
