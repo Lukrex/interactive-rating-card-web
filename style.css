@@ -82,23 +82,20 @@ body {
 .ball {
     background-color: hsl(210, 19%, 18%);
     color: hsl(216, 12%, 54%);
-    height: 2.8em;
-    width: 2.8em;
+    height: 3.6em;
+    width: 3.6em;
     text-align: center;
     border-radius: 100%;
     border: none;
 }
 .ball-text {
-    font-size: 0.93em;
+    font-size: 1.28em;
     position: relative;
     top: -0.1em;
 }
 .ball:hover {
     background-color: hsl(216, 12%, 54%);
     color: hsl(0, 0%, 100%);
-}
-.ball:active {
-    border-style: none;
 }
 .submit {
     position: relative;
@@ -153,12 +150,5 @@ body {
 @media only screen and (min-width: 550px) {
     body {
         font-size: 15px;
-    }
-    .ball {
-        height: 4.2em;
-        width: 4.2em;
-    }
-    .ball-text {
-        font-size: 1.4em;
     }
 }
